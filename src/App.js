@@ -35,8 +35,6 @@ function App() {
     setCart(filtered);
   };
 
-  console.log("cart here ", cart);
-
   return (
     <ProductContext.Provider value={{ products, addItem }}>
       <CartContext.Provider value={{ cart, removeItem }}>
